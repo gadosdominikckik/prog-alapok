@@ -98,21 +98,6 @@ szam3 = random.randint(100,999)
 szam4 = random.randint(100,999)
 szam5 = random.randint(100,999)
 
-
-
-
-
-
-
-    
-
-    
-    
-    
-    
-    
-
-
-
-
-    
+#Otthon másold le 
+#Házifeladat elkészítése
+#add, commit , push
