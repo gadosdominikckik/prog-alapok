@@ -101,3 +101,23 @@ szam5 = random.randint(100,999)
 #Otthon másold le 
 #Házifeladat elkészítése
 #add, commit , push
+
+import math
+import random
+
+a = random.randint(8,76)*13
+b = random.randint(8,76)*13
+c = random.randint(8,76)*13
+
+szamjegy = int(input("Adjon meg egy számjegyet:"))
+
+print(a,b,c)
+
+if(a % 10 == szamjegy or b % 10 == szamjegy or c % 10 == szamjegy ):
+    print("Van közte "+str(szamjegy)+"-re végződő")
+else:
+    print("nincs közte "+str(szamjegy)+"-re végződő")
+
+
+
+
