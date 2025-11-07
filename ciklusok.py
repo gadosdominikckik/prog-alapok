@@ -13,6 +13,9 @@ for karakter in szoveg:
 Tesztelős - While
 
 """
+
+import random as r
+
 # 1-10 ig szamok kiiratasa
 for elem in range(1,11,1):
     print(elem,end=" ")
@@ -68,3 +71,11 @@ index = "kalapács"
 
 for index in range(0,n,1):
     print(str(index+1)+szoveg[index],end=" ")
+
+
+for db in range(0,5,1):
+    szam = r.randint(0,n-1)
+    print(szoveg[szam],end=" ")
+print()
+
+#HF 17-21
