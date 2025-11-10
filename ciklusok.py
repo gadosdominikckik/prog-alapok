@@ -35,18 +35,16 @@ for karakter in szoveg:
 print()
 
 
+for index in range(0 , len(szoveg)-1,1):
+    print(szoveg[index]+",",end="")
+print(szoveg[-1])
 
+
+#Visszafele
 for index in range(len(szoveg)-1,-1,-1):
     print(szoveg[index],end="")
 print()
 
-
-
-
-
-for index in range(0 , len(szoveg)-1,1):
-    print(szoveg[index]+",",end="")
-print(szoveg[-1])
 
 # pdf 14.-16. feladat
 
@@ -79,3 +77,8 @@ for db in range(0,5,1):
 print()
 
 #HF 17-21
+
+#ujra felhasznalas
+
+ujra += szoveg[index]
+print()
