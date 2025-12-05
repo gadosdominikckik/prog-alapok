@@ -20,3 +20,6 @@ if(index <len(sz)-1):
     print("Van benne cs")
 else:
     print("nincs benne cs")
+
+
+#De Morgan azonosság
