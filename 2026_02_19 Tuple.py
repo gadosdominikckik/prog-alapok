@@ -53,14 +53,13 @@ def main():
     print(datum[0])
     vezeteknev = leon[1].split(" ")
     print(vezeteknev[0])
-
-
-    
     # 5
     # alma 12 500
     # körte 10 600
     # szilva 13 300
     # cseresznye 8 1200
     # meggy 6 1150
+    
+
 main()
 
