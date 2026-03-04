@@ -27,14 +27,31 @@ def feladat3(adatok):
     else:
         print("Ilyen nevű képviselőjelölt nincs a listában")
 
+
 def osszesSzavazat(adatok):
     osszeg = 0
     for i in range(0,len(adatok),1):
         osszeg += adatok[i][1]
     return osszeg 
 
-# def feladat4(adatok):
+def feladat4(adatok,osszeg):
+    mindenki = 12345
+    for i in range(len(adatok)):
+        jogosultak = mindenki / osszeg
+    return round(jogosultak,2)
 
+def feladat5(adatok):
+    for i in range(len(adatok)):
+        arany1 = 0
+        arany2 = 0
+        if([i][4] == "-"):
+            arany1 += [i][1]
+        else:
+            arany2 += [i][1]
+    return arany1
+    return arany2
+
+            
     
 
 def main():
@@ -44,7 +61,14 @@ def main():
     print("A helyhatósági választáson" ,len(adatok),"képviselőjelölt indult.")
 
     feladat3(adatok)
+    osszeg = osszesSzavazat(adatok)
+    jog = feladat4(adatok,osszeg)
 
+    fuggetlenszav = feladat5(adatok)
+    mindenmas = feladat5(adatok)
+    print(fuggetlenszav)
+    print(mindenmas)
 
+    print("A választáson",osszeg,"állampolgár, a jogosultak",jog," %-a vett részt.") 
 
 main()
