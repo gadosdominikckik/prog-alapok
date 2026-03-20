@@ -35,38 +35,14 @@ def feladat3(adatok):
     else:
         print("Ilyen nevű képviselőjelölt nincs a listában")
 
-def feladat4(adatok):
+def osszesSzavazat(adatok):
+    osszeg = 0
+    for i in range(0,len(adatok),1):
+        osszeg += adatok[i][1]
+    return osszeg 
 
-    szavazatokSzama = osszesSzavazat(adatok)
-    mindenki = 12345
-    szazalek = szavazatokSzama / mindenki *100
-    print(f"A választáson {szavazatokSzama} állampolgár, a jogosultak{round(szazalek),2} %-a vett részt.")
+# def feladat4(adatok):
 
-def partDarab(part):
-    db = 0
-    for i in range(len(adatok)):
-        if(adatok[i][4] == part):
-            db += 1
-    return db
-
-def feladat5(adatok):
-    gyep = partDarab("GYEP")
-    hep = partDarab("HEP")
-    tisz = partDarab("TISZ")
-    zep = partDarab("ZEP")
-    fugg = partDarab("-")
-    print("Gyümölcsevők pártja =",gyep)
-    print("Húsevők pártja =",hep)
-    print("Tejivók szövetsége =",tisz)
-    print("Zöldségevők pártja =",zep)
-    print("Független párt =",fugg)
-
-
-def feladat6(adatok):
-    maxe = maximumSzavazatok(adatok)
-    for i in range(len(adatok)):
-        if(adatok[i][1] == maxe):
-            print(f"{adatok[i][2]} {adatok[i][3]} {adatok[i][4]}")
     
 
 def main():
@@ -76,12 +52,10 @@ def main():
     print("A helyhatósági választáson" ,len(adatok),"képviselőjelölt indult.")
 
     feladat3(adatok)
+    osszeg = osszesSzavazat(adatok)
+    jog = feladat4(adatok,osszeg)
 
-    feladat4(adatok)
 
-    feladat5(adatok)
-
-    feladat6(adatok)
-
+    print("A választáson",osszeg,"állampolgár, a jogosultak",jog," %-a vett részt.") 
 
 main()
