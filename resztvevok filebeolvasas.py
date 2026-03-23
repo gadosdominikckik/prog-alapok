@@ -19,7 +19,8 @@ def filebeolvasas():
 #             osszeg += 1
 #     return osszeg
 
-
+# hany macska van a listabaan
+# programozasi tetelek alkalmazasa
 
 
 def main():
